@@ -1,0 +1,45 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #0d0000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f197;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #111;
+    padding: 10px 15px;
+    margin-left: 0;
+    position: fixed;
+    z-index: 2;
+    top: 20px;
+    left: 10px;
+}
+
+.openbtn:hover {
+    background-color: #444;
+    color: white;
+}
+

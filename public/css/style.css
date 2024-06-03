@@ -1,0 +1,505 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: rgba(81, 78, 79, 0.222);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.808);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(149, 45, 45, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: #e9e9f6cf;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #1e639f;
+}
+
+.pilihan-mobil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.mobil {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.mobil:hover {
+    transform: translateY(-5px);
+}
+
+.mobil a {
+    display: block;
+    color: inherit;
+}
+
+.mobil img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.mobil h4,
+.mobil p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.login-btn {
+    background-color: #08a7f1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.login-btn:hover {
+    background-color: #0b7ec6;
+}
+
+.dashboard {
+    background-color: #7fa9c5;
+}
+
+.dashboard:hover {
+    background-color: #7fa9c5;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(106, 106, 109, 0.944);
+    width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    z-index: 9999;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    /* Lebih kecil dari z-index popup agar background tidak menutupi popup */
+}
+
+.header-order {
+    background-color: #747171;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-order {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #c2d6e6;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: calc(100% - 24px);
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.header-transaksi {
+    background-color: #747171;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-transaksi {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.transaction-details p {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #747171;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Button css */
+.btn-transaksi {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+}
+
+/* Gaya untuk daftar transaksi */
+.transaction-history {
+    padding: 20px;
+}
+
+/* Gaya untuk setiap item transaksi */
+.transaction-item {
+    margin-bottom: 15px;
+    /* Margin bawah antara setiap item */
+    padding: 10px;
+    /* Padding di dalam setiap item */
+    background-color: #fff;
+    /* Warna latar belakang setiap item */
+    border-radius: 4px;
+    /* Border radius untuk sudut item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Bayangan untuk efek ketinggian item */
+}
+
+/* Gaya untuk teks dalam setiap item transaksi */
+.transaction-item p {
+    margin: 5px 0;
+    /* Margin di antara setiap paragraf */
+}
+
+/* Gaya untuk tombol bayar sekarang */
+.pay-now-btn {
+    background-color: #00A9FF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.pay-now-btn:hover {
+    background-color: #89CFF3;
+}
+
+/* Gaya untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 9px solid #ddd;
+}
+
+th {
+    background-color: #8bff0f70;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    background-color: #00A9FF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #007bbd;
+}
+
+.notification {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Gaya CSS untuk data pre-order */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #ACD793;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-button {
+    display: inline-block;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button {
+    background-color: #008DDA;
+}
+
+.delete-button {
+    background-color: #FF0000;
+}
+
+.action-button:hover {
+    background-color: #F6F5F2;
+    color: black;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.form-container {
+    margin-bottom: 20px;
+}
+
+.form-container form div {
+    margin-bottom: 15px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-container input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Warna untuk setiap baris pada tabel data pre-order */
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+    /* Warna latar belakang untuk baris ganjil */
+}
+
+/* Warna untuk tombol tambah */
+.form-container button[name="create"] {
+    background-color: #28a745;
+    /* Warna hijau */
+}
+
+.form-container button[name="create"]:hover {
+    background-color: #218838;
+    /* Warna hijau gelap saat tombol dihover */
+}
+
+/* Warna untuk tombol update */
+.form-container button[name="update"] {
+    background-color: #ffc107;
+    /* Warna kuning */
+}
+
+.print-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #006769;
+    /* Warna hijau */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button[name="update"]:hover {
+    background-color: #e0a800;
+    /* Warna kuning gelap saat tombol dihover */
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/* Tambahkan kelas untuk ikon jika diperlukan */
+.alert .icon {
+    margin-right: 10px;
+}
